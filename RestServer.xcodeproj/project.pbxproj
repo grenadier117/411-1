@@ -22,7 +22,7 @@
 
 /* Begin PBXBuildFile section */
 		D2DAF76E251D743800115987 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DAF76D251D743800115987 /* Database.swift */; };
-		D2DAF770251D7C2E00115987 /* PersonDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DAF76F251D7C2E00115987 /* PersonDao.swift */; };
+		D2DAF770251D7C2E00115987 /* ClaimDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DAF76F251D7C2E00115987 /* ClaimDao.swift */; };
 		OBJ_195 /* http_parser.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_147 /* http_parser.c */; };
 		OBJ_196 /* utils.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_148 /* utils.c */; };
 		OBJ_198 /* CHTTPParser.h in Headers */ = {isa = PBXBuildFile; fileRef = OBJ_150 /* CHTTPParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -514,7 +514,7 @@
 
 /* Begin PBXFileReference section */
 		D2DAF76D251D743800115987 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
-		D2DAF76F251D7C2E00115987 /* PersonDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDao.swift; sourceTree = "<group>"; };
+		D2DAF76F251D7C2E00115987 /* ClaimDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaimDao.swift; sourceTree = "<group>"; };
 		"HeliumLogger::HeliumLogger::Product" /* HeliumLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HeliumLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Kitura-TemplateEngine::KituraTemplateEngine::Product" /* KituraTemplateEngine.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KituraTemplateEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Kitura-net::CHTTPParser::Product" /* CHTTPParser.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CHTTPParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1134,7 +1134,7 @@
 			path = ".build/checkouts/Kitura.git--6417072577843116374/Sources/Kitura";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -1143,7 +1143,6 @@
 				OBJ_14 /* Dependencies */,
 				OBJ_176 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_58 /* bodyParser */ = {
@@ -1199,7 +1198,7 @@
 			children = (
 				OBJ_9 /* main.swift */,
 				D2DAF76D251D743800115987 /* Database.swift */,
-				D2DAF76F251D7C2E00115987 /* PersonDao.swift */,
+				D2DAF76F251D7C2E00115987 /* ClaimDao.swift */,
 			);
 			name = RestServer;
 			path = Sources/RestServer;
@@ -1702,9 +1701,10 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_176 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1958,7 +1958,7 @@
 			buildActionMask = 0;
 			files = (
 				D2DAF76E251D743800115987 /* Database.swift in Sources */,
-				D2DAF770251D7C2E00115987 /* PersonDao.swift in Sources */,
+				D2DAF770251D7C2E00115987 /* ClaimDao.swift in Sources */,
 				OBJ_434 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

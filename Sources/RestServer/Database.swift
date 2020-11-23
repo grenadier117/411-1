@@ -10,7 +10,7 @@ import Foundation
 
 class Database {
     static var dbObj : Database!
-    let dbname = "/Users/itloaner/Documents/PesonDb.sqlite"
+    let dbname = "/Users/jakehamowork/Documents/ClaimsDb.sqlite"
     var conn : OpaquePointer!
 
     init() {
@@ -26,7 +26,7 @@ class Database {
     }
 
     private func initializeDB() {
-        let sqlStmt = "create table if not exists person (first_name text, last_name text, ssn text)"
+        let sqlStmt = "create table if not exists claims (id text, title text, date text, isSolved integer)"
         if sqlite3_exec(conn, sqlStmt, nil, nil, nil) != SQLITE_OK {
             let errcode = sqlite3_errcode(conn)
             print("Create table failed due to error \(errcode)")
